@@ -25,7 +25,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
 
   return (
     <nav className={'z-40 w-full fixed top-0 py-6'}>
-      <div className="flex items-center justify-between mx-auto w-5/6 py-12 px-4 bg-black text-white">
+      <div className={!isAboveMediumScreens ? 'flex items-center justify-between mx-auto w-5/6 py-5 px-4 bg-black text-white' : 'flex items-center justify-between mx-auto w-5/6 py-12 px-4 bg-black text-white'}>
         <h4 className="font-playfair text-3xl font-bold">LOGO</h4>
 
         {/* DESKTOP NAV */}

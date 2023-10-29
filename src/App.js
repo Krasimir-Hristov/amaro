@@ -7,13 +7,13 @@ import Landing from "./scenes/Landing";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
-  const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
+  const isDesktop = useMediaQuery('(min-width: 1060px)');
   return (
     <div className="app bg-white">
       <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 
       <div className='w-5/6 mx-auto md:h-full'>
-        {isAboveMediumScreens && (
+        {isDesktop && (
           <DotGroup
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
